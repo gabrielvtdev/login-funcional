@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.entrar,
+.cadastrar {
+  padding: 10px;
+  border: none;
+  border-radius: 7px;
+  background-color: #877afc;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.5s ease;
+}
+
+.recuperar {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.entrar:hover {
+  background-color: #2e2a57;
+}
+
+.cadastrar:hover {
+  background-color: #2e2a57;
+}
+
+.recuperar:hover{
+  color: #877afc;
+}
+
+.entrar[disabled]{
+  opacity: 0.7;
+}
+
+.error{
+  color: red;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.errorpw{
+  margin: auto;
+  color: red;
+  display: none;
+}

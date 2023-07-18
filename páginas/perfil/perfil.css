@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .profile {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  
+  .profile-name {
+    margin: 0;
+  }
+  
+  .profile-email {
+    margin: 10px 0;
+  }
+  
+  .profile-actions {
+    margin: 20px 0;
+  }
+  
+  .edit-name {
+    display: none;
+    margin: 20px 0;
+  }
+  
+  .edit-name label {
+    margin-right: 10px;
+  }
+  
+  .edit-name input {
+    margin-right: 10px;
+  }
+  
+  .edit-name button {
+    margin-right: 10px;
+  }
+  

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CadastroFast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Cadastro</h2>
+        <form>
+            <label for="email">Email</label>
+            <input type="email" placeholder="" oninput="onChangeEmail()" id="email" />
+            <div class="error" id="email-required-error">Email é obrigatório!</div>
+            <div class="error" id="email-invalid-error">Email é inválido!</div>
+
+            <label>Senha</label>
+            <input type="password" placeholder="" id="password" oninput="onChangePassword()" required>
+            <div class="error" id="password-required-error">Senha é obrigatório!</div>
+            <div class="error" id="password-min-length-error">Senha deve ter pelo menos 8 caractéres!</div>
+
+            <label>Confirmar senha</label>
+            <input type="password" placeholder="" id="confirmPassword" oninput="onChangeConfirmPassword()" />
+            <div class="error" id="password-doesnt-match-error">Senhas não se confirmam!</div>
+
+
+            <button type="button" class="cadastro" disabled id="register-button" onclick="register()">Cadastrar</button>
+
+            <button type="button" class="login" onclick="login()">Login</button>
+    </div>
+</body>
+<script src="register.js"></script>
+<script src="../../validações.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth-compat.js"></script>
+<script src="../../firebase-init.js"></script>
+
+</html>
